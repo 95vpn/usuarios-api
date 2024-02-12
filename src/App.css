@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(98, 40, 40);
+    color: rgb(255, 136, 0);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-total {
+    display: flex;
+    background-color: rgb(98, 40, 40);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    gap: 20px;
+}
+
+.container-total-title {
+    display: flex;
+    justify-content: center;
+}
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+ /* .container-total-button {
+    position: relative;
+    display: flex;
+    background-color: chocolate;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.container-total-button {
+    display: flex;
+    width: 100%;
+    object-fit: contain;
+}  */
+
+.container-total-button :hover {
+    transition: .3s ease-in-out;
+    transform: scale(1.1);
+    color: azure;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+    .container-total-title {
+        font-size: 44px;
+    }
+
+    .container-total-button {
+    position: relative;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+}
+
+    .container-total-button :hover {
+        transition: .3s ease-in-out;
+        transform: scale(1.2);
+        color: azure;
+    }
+
+    .container-card {
+        font-size: 24px;
+        
+    }
+    
+}
