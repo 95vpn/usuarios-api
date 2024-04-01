@@ -3,11 +3,13 @@ import './App.css'
 import FormUser from './components/FormUser'
 import CardUser from './components/CardUser'
 import useCrud from './hook/useCrud'
-const url = 'https://users-crud.academlo.tech'
+import DeleteCard from './components/DeleteCard'
+// const url = 'https://users-crud.academlo.tech'
+const url = 'https://backend-users-crud.onrender.com/api/v1'
 
 function App() {
 
-
+  
   const [isOpen, setIsOpen] = useState(false)
   const [editUser, setEditUser] = useState();
 
@@ -42,15 +44,16 @@ function App() {
         {
           users?.map(user => (
             <CardUser
-              key={user.id}
-              user={user}
-              deleteUser={deleteUser}
-              setEditUser={setEditUser}
-              setIsOpen={setIsOpen}
+            key={user.id}
+            user={user}
+            deleteUser={deleteUser}
+            setEditUser={setEditUser}
+            setIsOpen={setIsOpen}
             />
-          ))
-        }
+            ))
+          }
       </div>
+          
     </div>
   )
 }

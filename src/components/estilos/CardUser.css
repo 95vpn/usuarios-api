@@ -41,6 +41,7 @@
     margin-top: 10px;
     gap: 10px;
     justify-content: flex-start;
+    backdrop-filter: blur(2px);
 }
 
 .container-button:hover :first-child {
@@ -57,6 +58,16 @@
     display: flex;
     color: beige;
 }
+
+.confirmation-message {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    backdrop-filter: blur(2px); /* Aplicar efecto de desenfoque */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
 
 @media screen and (width: 800px) {
     .container-button {

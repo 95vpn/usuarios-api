@@ -22,7 +22,7 @@ const CardUser = ({ user, deleteUser, setEditUser, setIsOpen }) => {
                     <li className='container-list'><span>Correo: </span><span>{user.email}</span></li>
                     <li className='container-list'><span>Cumpleaños: </span><span><ion-icon name="calendar-outline"></ion-icon> {user.birthday}</span></li>
                 </ul>
-                <div className='button-container'>
+                <div className={'button-container'}>
                     <div className='container-button'>
                         <span>
                             <button className='container-button' onClick={handleDelete}><box-icon name='trash-alt' ></box-icon></button>

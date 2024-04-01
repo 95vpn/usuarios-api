@@ -35,6 +35,13 @@ const FormUser = ({ createUser, editUser, updateUser, setEditUser, isOpen, setIs
 
     const handleClose = () => {
         setIsOpen(false);
+        reset({
+            email: '',
+            password: '',
+            first_name: '',
+            last_name: '',
+            birthday: '',
+        });
     }
 
     return (
@@ -64,7 +71,7 @@ const FormUser = ({ createUser, editUser, updateUser, setEditUser, isOpen, setIs
                     <label htmlFor="birthday">Birthday: </label>
                     <input {...register('birthday')} id='birthday' type="date" />
                 </div>
-                <button>Submit</button>
+                <button className='form-submit'>Submit</button>
             </form>
         </div>
     )
