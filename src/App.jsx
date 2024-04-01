@@ -4,8 +4,10 @@ import FormUser from './components/FormUser'
 import CardUser from './components/CardUser'
 import useCrud from './hook/useCrud'
 import DeleteCard from './components/DeleteCard'
+import { URL_API } from '../url'
 // const url = 'https://users-crud.academlo.tech'
-const url = 'https://backend-users-crud.onrender.com/api/v1'
+const url = URL_API.url
+
 
 function App() {
 
